@@ -17,6 +17,17 @@ def home_page():
 def profile(name):
 	return render_template('index.html', name=name)
 
+@app.route('/research', methods=['GET'])
+def research():
+	return render_template('research.html')
+
+@app.route('/structure', methods=['GET'])
+def structure():
+	return render_template('structure.html')
+
+@app.route('/antibody', methods=['GET'])
+def antibody():
+	return render_template('antibody.html')
 
 @app.route('/add_numbers', methods=['GET','POST'])
 def add_numbers_post():
