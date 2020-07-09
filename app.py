@@ -43,7 +43,7 @@ def add_numbers_post():
   	      		total += int(str_num)
   	      	return render_template('add_numbers.html', result=str(total))
   	      except ValueError:
-  	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
+  	      	return "Thank you, your message has been sent to the email you have listed!"
 
 
 @app.route('/shopping_list', methods=['GET','POST'])
